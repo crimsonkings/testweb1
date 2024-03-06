@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>WEB1-JavaScript</title>
+    <meta charset="utf-8">
+    <style media="screen">
+      body{
+        margin:0;
+      }
+      #active {
+        color:red;
+      }
+      .saw {
+        color:gray;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+        <!font-size: 120%;>
+      }
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 20px;
+      }
+      ol{
+        border-right: 1px solid gray;
+        width:100px;
+        margin:0;
+        padding: 20px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left: 33px;
+      }
+      #grid #article{
+        padding-left: 25px;
+      }
+      #footer{
+        font-size: 20px;
+        text-align: center;
+        /* border:5px solid pink; */
+        border-top: 1px solid gray;
+        margin: 0;
+      }
+      @media(max-width:800px) {
+        #grid{
+          display:block;
+        }
+        ol{
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html" id="active">JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>JavaScript</h2>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/JavaScript"> JavaScript</a>
+           (/ˈdʒɑːvəskrɪpt/),[10] often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.[11] Over 97% of websites use JavaScript on the client side for web page behavior,[12] often incorporating third-party libraries.[13] All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+        </p>
+        <br>
+        <img src="https://images.unsplash.com/photo-1646225717344-765484703a03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" width="100%">
+      </div>
+    </div>
+  </body>
+</html>
